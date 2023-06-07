@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2 # Da checkout, busca os dados da branch pra dentro do ubuntu
-      - uses: actions/setup-go@v2
+      - uses: actions/setup-go@v2 # Usa go lang
         with:
           go-version: 1.15
       - run: go test
