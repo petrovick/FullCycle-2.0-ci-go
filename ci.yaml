@@ -1,5 +1,5 @@
 name: ci-golang-worflow
-on: [push, pull_request]
+on: [push]
 jobs:
   check-application:
     runs-on: ubuntu-latest
