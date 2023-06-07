@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2 # Da checkout, busca os dados da branch pra dentro do ubuntu
-      - uses: actions/setup-go@v2 # teste
+      - uses: actions/setup-go@v2 #AAA
         with:
           go-version: ${{ matrix.go }}
       - run: go test
