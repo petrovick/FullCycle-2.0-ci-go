@@ -10,10 +10,10 @@ jobs:
     strategy:
       matrix:
         go: ['1.14', '1.15']
-        
+
     steps:
       - uses: actions/checkout@v2 # Da checkout, busca os dados da branch pra dentro do ubuntu
-      - uses: actions/setup-go@v2
+      - uses: actions/setup-go@v2 # teste
         with:
           go-version: ${{ matrix.go }}
       - run: go test
