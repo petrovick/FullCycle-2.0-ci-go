@@ -1,9 +1,6 @@
 name: ci-golang-worflow
-on: 
-  pull_request:
-    branches:
-      - develop
-jobs: 
+on: [pull_request]
+jobs:
   check-application:
     runs-on: ubuntu-latest
     steps:
